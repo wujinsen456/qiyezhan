@@ -209,11 +209,11 @@ nav{
     width: 100%;
     height: 40px;
     margin-top: 55px;
-    border-bottom: 1px solid #b3b3b2;
+    border-bottom: 1px solid #e4e4e4;
     /*background: pink;*/
 }
 .all_left{
-    width: 190px;
+    width: 220px;
     height: 40px;
     float: left;
     border-bottom: 2px solid #777776;
@@ -228,7 +228,7 @@ nav{
     padding-right: 7px;
 }
 .all_left_ri{
-    width: 95px;
+    width: 120px;
     height: 26px;
     font-size: 14px;
     color: #bfbeba;
@@ -261,24 +261,84 @@ nav{
 .row1{
     width: 100%;
     height: auto;
-    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
 }
 .row1 li{
     width: 25%;
     height:auto;
-    /*padding: 20px;*/
-    /*border: 1px solid #bfbeba;*/
-    /*background: pink;*/
-    float: left;
     margin-top: 40px;
 }
-/*.dis1_1{*/
-    /*width: 80%;*/
-    /*height: auto;*/
-    /*margin: 0px auto 20px auto;*/
-    /*padding: 40px 10px 10px 10px;*/
-    /*border: 1px solid #bfbeba;*/
-/*}*/
+.row1 li:first-child,.row1 li:nth-child(2),.row1 li:nth-child(3),.row1 li:last-child{
+    width: 23%;
+    height: auto;
+    /*background: #ff8200;*/
+    margin: 50px auto 50px auto;
+    border: 1px solid #e4e4e4;
+}
+.row1 li:last-child{
+    margin-right: 0;
+}
+.dis1_1{
+    width: 100%;
+    height: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.dis1_word{
+    width: 100%;
+    height: 30px;
+    font-size: 16px;
+    color: #999999;
+    font-family: 微软雅黑;
+    line-height: 30px;
+    text-align: center;
+}
+.dis1_price{
+    width: 100%;
+    height: 40px;
+    font-size: 16px;
+    color: #333;
+    font-family: 微软雅黑;
+    line-height: 40px;
+    text-align: center;
+    padding-bottom: 10px;
+}
+.promotion{
+    width: 100%;
+    height: auto;
+}
+.container_pro{
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.row2{
+    width: 100%;
+    height: auto;
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+.rpw2 li{
+    width: 50%;
+    height: 500px;
+    background: pink;
+    border: 1px solid #e4e4e4;
+}
+.row2 li:first-child,.row2 li:last-child{
+    width: 49%;
+    border: 1px solid #e4e4e4;
+}
+.dis5_size{
+    width: 100%;
+    height: auto;
+}
+.pro_time{
+    width: 100%;
+    height: 90px;
+}
 /*<768px*/
 @media screen and (max-width: 768px){
     .main_ban_down{
