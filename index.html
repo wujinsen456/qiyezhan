@@ -5,9 +5,17 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>在线花店</title>
+    <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- 可选的 Bootstrap 主题文件（一般不用引入） -->
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://at.alicdn.com/t/font_773939_4kx5vstd58.css">
-    <link rel="stylesheet" href="css/ingdex.css">
+    <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
     <header>
@@ -38,6 +46,7 @@
             </ul>
         </main>
     </nav>
+
     <div class="banner">
         <img src="img/banner1.jpg" alt="" class="banner_size">
         <!--<img src="img/banner.jpg" alt="" class="banner_size">-->
@@ -45,59 +54,75 @@
         <div class="banner_lt">〈</div>
         <div class="banner_gt">〉</div>
     </div>
+
     <section class="banner_down">
-        <main class="main_ban_down">
-            <ul class="row">
-                <li class="col-lg-6 col-md-6 col-sm-6">
-                    <img src="img/photo1.jpg" alt="" class="photo1_size1">
-                </li>
-                <li class="col-lg-6 col-md-6 col-sm-6">
-                    <img src="img/photo2.jpg" alt="" class="photo1_size2">
+        <main class="ban_down_all">
+            <ul class="container_ban_down">
+                <li class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <img src="img/photo1.jpg" alt="" class="photo1_size1">
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <img src="img/photo2.jpg" alt="" class="photo1_size2">
+                    </div>
                 </li>
             </ul>
         </main>
     </section>
+
     <section class="today">
-        <main class="main_today">
-            <div class="today_all">
-                <div class="all_left">
-                    <div class="all_left_le">今日上新</div>
-                    <div class="all_left_ri">New product</div>
-                </div>
-                <div class="all_right"> + 查看更多</div>
-            </div>
+        <main class="today_all">
+             <div class="all_left">
+                 <div class="all_left_le">今日上新</div>
+                 <div class="all_left_ri">New product</div>
+             </div>
+             <div class="all_right"> + 查看更多</div>
+             </div>
         </main>
     </section>
+
     <section class="today_display">
-        <main class="container_dis">
-            <ul class="row1">
-                <li class="col-lg-3 col-md-3 col-sm-3">
-                    <img src="img/dis1.jpg" alt="" class="dis1_1">
-                    <div class="dis1_word">植物花卉001</div>
-                    <div class="dis1_price">￥5900</div>
+        <main class="display_all">
+            <ul class="container_display">
+                <li class="row">
+                    <div class="col-lg-3 col-md-3 col-sm-3">
+                        <div class="col1">
+                            <img src="img/dis1.jpg" alt="" class="dis1_1">
+                            <div class="dis1_word">植物花卉001</div>
+                            <div class="dis1_price">￥5900</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-3">
+                        <div class="col1">
+                            <img src="img/dis2.jpg" alt="" class="dis1_1">
+                            <div class="dis1_word">植物花卉004</div>
+                            <div class="dis1_price">￥5900</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-3">
+                        <div class="col1">
+                            <img src="img/dis3.jpg" alt="" class="dis1_1">
+                            <div class="dis1_word">植物花卉006</div>
+                            <div class="dis1_price">￥5900</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-3">
+                        <div class="col2">
+                            <img src="img/dis4.jpg" alt="" class="dis1_1">
+                            <div class="dis1_word">植物花卉008</div>
+                            <div class="dis1_price">￥5900</div>
+                        </div>
+                    </div>
                 </li>
-                <li class="col-lg-3 col-md-3 col-sm-3">
-                    <img src="img/dis2.jpg" alt="" class="dis1_1">
-                    <div class="dis1_word">植物花卉004</div>
-                    <div class="dis1_price">￥5900</div>
-                </li>
-                <li class="col-lg-3 col-md-3 col-sm-3">
-                    <img src="img/dis3.jpg" alt="" class="dis1_1">
-                    <div class="dis1_word">植物花卉006</div>
-                    <div class="dis1_price">￥5900</div>
-                </li>
-                <li class="col-lg-3 col-md-3 col-sm-3">
-                    <img src="img/dis4.jpg" alt="" class="dis1_1">
-                    <div class="dis1_word">植物花卉008</div>
-                    <div class="dis1_price">￥5900</div>
-                </li>
+
             </ul>
         </main>
     </section>
+
     <section class="today">
         <main class="main_today">
             <div class="today_all">
-                <div class="all_left">
+                <div class="all_left1">
                     <div class="all_left_le">限时促销</div>
                     <div class="all_left_ri">Sales promotion</div>
                 </div>
@@ -105,19 +130,160 @@
             </div>
         </main>
     </section>
+
     <section class="promotion">
-        <main class="container_pro">
-            <ul class="row2">
-                <li class="col-lg-6 col-md-6 col-sm-6">
-                    <div class="pro_time"></div>
-                    <img src="img/dis5.jpg" alt="" class="dis5_size">
-                </li>
-                <li class="col-lg-6 col-md-6 col-sm-6">
-                    <img src="img/dis6.jpg" alt="" class="dis5_size">
-                    <div class="pro_time"></div>
+        <main class="promotion_all">
+            <ul class="container_pro">
+                <li class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <div class="col_pro1">
+                            <div class="pro_time">
+                                <span class="num1">
+                                    <span>214</span>
+                                    <span class="num2">天</span>
+                                </span>
+                                <span class="num1">
+                                    <span>10</span>
+                                    <span class="num2">时</span>
+                                </span>
+                                <span class="num1">
+                                    <span>44</span>
+                                    <span class="num2">分钟</span>
+                                </span>
+                                <span class="num1">
+                                    <span>44</span>
+                                    <span class="num2">秒</span>
+                                </span>
+                            </div>
+                            <img src="img/dis5.jpg" alt="" class="dis5_size">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <div class="col_pro1">
+                            <img src="img/dis6.jpg" alt="" class="dis5_size">
+                            <div class="pro_time">
+                                <span class="num1">
+                                    <span>214</span>
+                                    <span class="num2">天</span>
+                                </span>
+                                <span class="num1">
+                                    <span>10</span>
+                                    <span class="num2">时</span>
+                                </span>
+                                <span class="num1">
+                                    <span>44</span>
+                                    <span class="num2">分钟</span>
+                                </span>
+                                <span class="num1">
+                                    <span>44</span>
+                                    <span class="num2">秒</span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
                 </li>
             </ul>
         </main>
     </section>
+
+    <section class="introduce">
+        <ul class="container_intro">
+             <li class="row">
+                 <div class="col-lg-6 col-md-6 col-sm-6">
+                     <div class="bac"></div>
+                 </div>
+                 <div class="col-lg-6 col-md-6 col-sm-6">
+                     <div class="bac1"></div>
+                     <img src="img/huayu.png" alt="" class="bac1_imgsize">
+                     <p class="bac1_p">我们的流线式网页布局设计方案和可视化图文内容编辑模式让网站制作和维护成为一件轻松惬意的事。起飞页提供了海量精美网站模板和成品网站，起飞页的核心竞争力来自于它集流线式布局方案与可视化内容编辑于一体，支持打字传图、自由拖拽，不需要专业编写代码，也没有其他建站工具的层叠式烦恼，您可以随心所欲创建区块、添加组件…</p>
+                 </div>
+             </li>
+        </ul>
+    </section>
+
+    <section class="today">
+        <main class="main_today">
+            <div class="today_all">
+                <div class="all_left2">
+                    <div class="all_left_le">装点家园</div>
+                    <div class="all_left_ri">decorate the homes</div>
+                </div>
+                <div class="all_right"> + 查看更多</div>
+            </div>
+        </main>
+    </section>
+
+    <section class="decorate">
+        <main class="dec_all">
+            <ul class="container_dec">
+                <li class="row">
+                    <div class="col-lg-3 col-md-3 col-sm-3">
+                        <div class="col_dec_all">
+                            <img src="img/dec1.jpg" alt="" class="dec1_size">
+                            <div class="dec1_word_all">
+                                <div class="dec1_line">  </div>
+                                <div class="dec1_word1">植物花卉008</div>
+                                <div class="dec1_word2">￥5900</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-3">
+                        <div class="dec1_word_all">
+                            <div class="dec1_line">  </div>
+                            <div class="dec1_word1">植物花卉006</div>
+                            <div class="dec1_word2">￥5900</div>
+                            <img src="img/dec2.jpg" alt="" class="dec1_size">
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-3">
+                        <div class="col_dec_all">
+                            <img src="img/dec3.jpg" alt="" class="dec1_size">
+                            <div class="dec1_word_all">
+                                <div class="dec1_line">  </div>
+                                <div class="dec1_word1">植物花卉004</div>
+                                <div class="dec1_word2">￥5900</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-3">
+                        <div class="dec1_line">  </div>
+                        <div class="dec1_word1">植物花卉006</div>
+                        <div class="dec1_word2">￥5900</div>
+                        <img src="img/dec4.jpg" alt="" class="dec1_size">
+                    </div>
+                </li>
+            </ul>
+        </main>
+    </section>
+
+    <section class="translate">
+        <main class="trans_all">
+            <ul class="container_trans">
+                <li class="row">
+                    <div class="col-lg-8 col-md-8 col-sm-8">
+                        <div class="col_trans">
+                            <div class="col_trans1">
+                                <img src="img/trans1.jpg" alt="" class="trans_size" >
+                                <div class="trans_word">山中花店的活动中 稀有种子如何获得？</div>
+                                <div class="trans_word1">发布日期：2018-8-15</div>
+                                <p class="trans_p">从一九四七年巴黎蒙田大街30号New Look的展出开始，Dior就成为高级女装的代名词, 继承了法国高级女装的传统，始终保持华丽的设计路线，做工精细，迎合上流社会成熟女性的审...</p>
+                            </div>
+                            <div class="col_trans1">
+                                <img src="img/trans2.jpg" alt="" class="trans_size" >
+                                <div class="trans_word">天气干燥，花店老板推荐制氧绿植</div>
+                                <div class="trans_word1">发布日期：2018-8-15</div>
+                                <p class="trans_p">秋天的拉萨，天气比较干燥，这个时候在家里养一些可以制造氧气和水分的植物大有好处。记者走访多个花店后发现，很多店老板都会同时提到一种制氧植物——红豆杉。红豆杉有“植物增氧机”之称...</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4">
+                        <img src="img/trans3.jpg" alt="" class="trans3_size">
+                    </div>
+                </li>
+            </ul>
+        </main>
+    </section>
+
+    section.
 </body>
 </html>
