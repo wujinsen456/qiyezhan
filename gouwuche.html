@@ -13,8 +13,16 @@
     <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://at.alicdn.com/t/font_773939_sgaou2j3oca.css">
     <link rel="stylesheet" href="css/index.css">
+    <script src="js/animate.js"></script>
+    <script src="js/gouwuche.js"></script>
+
 </head>
 <body>
+<div class="search_all">
+    <input type="text" placeholder="输入关键字" class="search_text" id="plant">
+    <button type="button" class="search_button1">取消</button>
+    <button type="button" class="search_button">确定</button>
+</div>
     <header>
         <main class="main_he">
             <div class="main_he1">
@@ -43,7 +51,7 @@
                     </div>
                 </div>
                 <a href="index6.html"><i class="iconfont icon-renwu"></i></a>
-                <a href="index7.html"><i class="iconfont icon-fangdajing1"></i></a>
+                <i class="iconfont icon-fangdajing1 icon_se"></i>
             </div>
         </main>
     </header>
@@ -75,12 +83,12 @@
                     </div>
                     <div class="cont_left_down">
                         <i class="iconfont icon-shanchu"></i>
-                        <a href=""><img src="img/001.jpg" alt="" class="cont_pho_size"></a>
-                        <a href=""><span class="cont_word">植物花卉001</span></a>
+                        <a href="xiangqing1.html"><img src="img/001.jpg" alt="" class="cont_pho_size"></a>
+                        <a href="xiangqing1.html"><span class="cont_word">植物花卉001</span></a>
                         <a href=""><span class="cont_price">￥5900</span></a>
                         <div class="cont_plus">
                             <div class="plant_plus2">-</div>
-                            <div class="plant_plus2">1</div>
+                            <div class="plant_plus2" id="num">1</div>
                             <div class="plant_plus3">+</div>
                         </div>
                         <div class="cont_pri_all">￥5900</div>
@@ -91,7 +99,7 @@
                     <div class="cont_ri_pri">购物车总计</div>
                     <div class="cont_both">
                         <div class="cont_pri_sma">购物车小计</div>
-                        <div class="cont_sma_pri">￥5900</div>
+                        <div class="cont_sma_pri" id="total">￥5900</div>
                     </div>
                     <div class="cont_both">
                         <div class="cont_pri_sma">运费</div>

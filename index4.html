@@ -13,9 +13,37 @@
     <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://at.alicdn.com/t/font_773939_ksnh3sg0nl.css">
     <link rel="stylesheet" href="css/index.css">
+    <!--<style type="text/css">-->
+        <!--html{height:350px}-->
+        <!--body{height:100%;margin:0px;padding:0px}-->
+        <!--#container{height:350px}-->
+    <!--</style>-->
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=GbLBG0iSnUi7hvBVdWxAm0qCvK46SsFu">//2.0版本
+    </script>
+    <script src="js/animate.js"></script>
+    <script src="js/index.js"></script>
 </head>
 <body>
+<div class="search_all">
+    <input type="text" placeholder="输入关键字" class="search_text" id="plant">
+    <button type="button" class="search_button1">取消</button>
+    <button type="button" class="search_button">确定</button>
+</div>
 
+<script type="text/javascript">
+    var map = new BMap.Map("container1"); // 创建地图实例
+    var point = new BMap.Point(119.3,26.08); // 创建点坐标
+    map.centerAndZoom(point, 15); // 初始化地图，设置中心点坐标和地图级别
+    var marker = new BMap.Marker(point); // 创建标注
+    map.addOverlay(marker); //将标注添加到地图中
+    var opts1 = {type: BMAP_NAVIGATION_CONTROL_LARGE}
+    map.addControl(new BMap.NavigationControl(opts1));
+    var opts2 = {offset: new BMap.Size(150, 5)}
+    map.addControl(new BMap.ScaleControl(opts2));
+    map.addControl(new BMap.OverviewMapControl());
+    map.addControl(new BMap.MapTypeControl());
+    map.setCurrentCity("福州");
+</script>
     <header>
         <main class="main_he">
             <div class="main_he1">
@@ -44,7 +72,7 @@
                     </div>
                 </div>
                 <a href="index6.html"><i class="iconfont icon-renwu"></i></a>
-                <a href="index7.html"><i class="iconfont icon-fangdajing1"></i></a>
+                <i class="iconfont icon-fangdajing1 icon_se"></i>
             </div>
         </main>
     </header>
@@ -99,7 +127,9 @@
                             <div class="map_word">门店坐标</div>
                             <div class="map_word1">CONTACT US</div>
                             <div class="map_word2">︾</div>
+                            <div id="container1"></div>
                         </div>
+
                     </div>
                 </li>
             </ul>

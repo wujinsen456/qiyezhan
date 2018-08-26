@@ -17,8 +17,16 @@
 
     <link rel="stylesheet" href="https://at.alicdn.com/t/font_773939_ksnh3sg0nl.css">
     <link rel="stylesheet" href="css/index.css">
+
+    <script src="js/animate.js"></script>
+    <script src="js/index.js"></script>
 </head>
 <body>
+    <div class="search_all">
+        <input type="text" placeholder="输入关键字" class="search_text" id="plant">
+        <button type="button" class="search_button1">取消</button>
+        <button type="button" class="search_button">确定</button>
+    </div>
     <header>
         <main class="main_he">
             <div class="main_he1">
@@ -37,7 +45,7 @@
                             <div class="he3_hide1_k">
                                 <img src="img/001.jpg" alt="" class="hide1_all_size">
                                 <div class="hide1_all_word">植物花卉001</div>
-                                <div class="hide1_all_word">1&nbsp;&nbsp;×&nbsp;&nbsp;￥5900</div>
+                                <div class="hide1_all_word"><span id="num">1</span>&nbsp;&nbsp;×&nbsp;&nbsp;￥5900</div>
                             </div>
                             <div class="hide1_all_line"></div>
                             <div class="price_all">小计:¥5900</div>
@@ -47,7 +55,7 @@
                     </div>
                 </div>
                 <a href="index6.html"><i class="iconfont icon-renwu"></i></a>
-                <a href="index7.html"><i class="iconfont icon-fangdajing1"></i></a>
+                <i class="iconfont icon-fangdajing1 icon_se"></i>
             </div>
         </main>
     </header>
@@ -69,14 +77,14 @@
     </nav>
 
     <div class="banner">
-        <img src="img/banner1.jpg" alt="" class="banner_size">
         <div class="banner_bac"></div>
-        <!--<img src="img/banner.jpg" alt="" class="banner_size">-->
+        <img src="img/banner1.jpg" alt="" class="banner_size" style="left: 0">
+        <img src="img/banner.jpg" alt="" class="banner_size">
         <div class="banner_word">H&nbsp;&nbsp;&nbsp;U&nbsp;&nbsp;&nbsp;A &nbsp;&nbsp;Y&nbsp;&nbsp;&nbsp;U</div>
         <div class="banner_lt">〈</div>
         <div class="banner_gt">〉</div>
         <div class="pot">
-            <div class="pot1"></div>
+            <div class="pot1 potHot"></div>
             <div class="pot1"></div>
         </div>
     </div>
@@ -102,7 +110,7 @@
                  <div class="all_left_le">今日上新</div>
                  <div class="all_left_ri">New product</div>
              </div>
-             <div class="all_right"> + 查看更多</div>
+            <a href="index1.html"><div class="all_right"> + 查看更多</div></a>
              </div>
         </main>
     </section>
@@ -121,7 +129,7 @@
                     </div>
                     <div class="col-lg-3 col-md-3 col-sm-3">
                         <div class="col1">
-                            <div class="dis1_1_size"><a href="xiangqing1.html"><img src="img/dis2.jpg" alt="" class="dis1_1"></a></div>
+                            <div class="dis1_1_size"><a href="xiangqing4.html"><img src="img/dis2.jpg" alt="" class="dis1_1"></a></div>
                             <a href="xiangqing1.html"><div class="dis1_word">植物花卉004</div></a>
                             <div class="dis1_line"></div>
                             <div class="dis1_price">￥5900</div>
@@ -129,7 +137,7 @@
                     </div>
                     <div class="col-lg-3 col-md-3 col-sm-3">
                         <div class="col1">
-                            <div class="dis1_1_size"><a href="xiangqing1.html"><img src="img/dis3.jpg" alt="" class="dis1_1"></a></div>
+                            <div class="dis1_1_size"><a href="xiangqing6.html"><img src="img/dis3.jpg" alt="" class="dis1_1"></a></div>
                             <a href="xiangqing1.html"><div class="dis1_word">植物花卉006</div></a>
                             <div class="dis1_line"></div>
                             <div class="dis1_price">￥5900</div>
@@ -137,7 +145,7 @@
                     </div>
                     <div class="col-lg-3 col-md-3 col-sm-3">
                         <div class="col2">
-                            <div class="dis1_1_size"><a href="xiangqing1.html"><img src="img/dis4.jpg" alt="" class="dis1_1"></a></div>
+                            <div class="dis1_1_size"><a href="xiangqing8.html"><img src="img/dis4.jpg" alt="" class="dis1_1"></a></div>
                             <a href="xiangqing1.html"><div class="dis1_word">植物花卉008</div></a>
                             <div class="dis1_line1"></div>
                             <div class="dis1_price">￥5900</div>
@@ -156,7 +164,7 @@
                     <div class="all_left_le">限时促销</div>
                     <div class="all_left_ri">Sales promotion</div>
                 </div>
-                <div class="all_right"> + 查看更多</div>
+                <a href="index1.html"><div class="all_right"> + 查看更多</div></a>
             </div>
         </main>
     </section>
@@ -220,6 +228,7 @@
         <ul class="container_intro">
              <li class="row">
                  <div class="col-lg-6 col-md-6 col-sm-6">
+                     <div class="banner_bac"></div>
                      <div class="bac"></div>
                  </div>
                  <div class="col-lg-6 col-md-6 col-sm-6">
@@ -238,7 +247,7 @@
                     <div class="all_left_le">装点家园</div>
                     <div class="all_left_ri">decorate the homes</div>
                 </div>
-                <div class="all_right"> + 查看更多</div>
+                <a href="index1.html"><div class="all_right"> + 查看更多</div></a>
             </div>
         </main>
     </section>
@@ -249,11 +258,11 @@
                 <li class="row">
                     <div class="col-lg-3 col-md-3 col-sm-3" class="col_size">
                        <div class="col_dec_all">
-                                <a href="xiangqing1.html"><div class="col_dec_all1"></div></a>
-                                <div class="dec1_ku"><a href="xiangqing1.html"><img src="img/dec1.jpg" alt="" class="dec1_size"></a></div>
+                                <a href="xiangqing8.html"><div class="col_dec_all1"></div></a>
+                                <div class="dec1_ku"><a href="xiangqing8.html"><img src="img/dec1.jpg" alt="" class="dec1_size"></a></div>
                                 <div class="dec1_word_all">
                                     <div class="dec1_line"></div>
-                                    <a href=""><div class="dec1_word1">植物花卉008</div></a>
+                                    <a href="xiangqing8.html"><div class="dec1_word1">植物花卉008</div></a>
                                     <div class="dec1_word2">￥5900</div>
                                 </div>
                             </div>
@@ -262,20 +271,20 @@
                         <div class="col_dec_all">
                             <div class="dec1_word_all">
                                 <div class="dec1_line">  </div>
-                                <a href="xiangqing1.html"><div class="dec1_word1">植物花卉008</div></a>
+                                <a href="xiangqing6.html"><div class="dec1_word1">植物花卉006</div></a>
                                 <div class="dec1_word2">￥5900</div>
                             </div>
-                            <a href="xiangqing1.html"><div class="col_dec_all1"></div></a>
-                            <div class="dec1_ku"><a href="xiangqing1.html"><img src="img/dec2.jpg" alt="" class="dec1_size"></a></div>
+                            <a href="xiangqing6.html"><div class="col_dec_all1"></div></a>
+                            <div class="dec1_ku"><a href="xiangqing6.html"><img src="img/dec2.jpg" alt="" class="dec1_size"></a></div>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-3 col-sm-3" class="col_size">
                         <div class="col_dec_all">
-                            <a href="xiangqing1.html"><div class="col_dec_all1"></div></a>
-                            <div class="dec1_ku"><a href="xiangqing1.html"><img src="img/dec3.jpg" alt="" class="dec1_size"></a></div>
+                            <a href="xiangqing4.html"><div class="col_dec_all1"></div></a>
+                            <div class="dec1_ku"><a href="xiangqing4.html"><img src="img/dec3.jpg" alt="" class="dec1_size"></a></div>
                             <div class="dec1_word_all">
                                 <div class="dec1_line">  </div>
-                                <a href="xiangqing1.html"><div class="dec1_word1">植物花卉004</div></a>
+                                <a href="xiangqing4.html"><div class="dec1_word1">植物花卉004</div></a>
                                 <div class="dec1_word2">￥5900</div>
                             </div>
                         </div>
@@ -284,11 +293,11 @@
                         <div class="col_dec_all">
                             <div class="dec1_word_all">
                                 <div class="dec1_line">  </div>
-                                <a href="xiangqing1.html"><div class="dec1_word1">植物花卉008</div></a>
+                                <a href="xiangqing2.html"><div class="dec1_word1">植物花卉002</div></a>
                                 <div class="dec1_word2">￥5900</div>
                             </div>
-                            <a href="xiangqing1.html"><div class="col_dec_all1"></div></a>
-                            <div class="dec1_ku"><a href="xiangqing1.html"><img src="img/dec4.jpg" alt="" class="dec1_size"></a></div>
+                            <a href="xiangqing2.html"><div class="col_dec_all1"></div></a>
+                            <div class="dec1_ku"><a href="xiangqing2.html"><img src="img/dec4.jpg" alt="" class="dec1_size"></a></div>
                         </div>
                     </div>
                 </li>

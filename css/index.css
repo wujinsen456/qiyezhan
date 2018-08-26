@@ -73,6 +73,7 @@ header{
     right: 0;
     z-index: 2;
     display: none;
+    transition: all 0.5s;
 }
 .he3_hide1_all{
     width: 340px;
@@ -142,6 +143,7 @@ header{
 }
 .main_he3_size:hover .main_he3_hide1{
     display: block;
+
 }
 .he3_hide_word{
     width: 300px;
@@ -162,7 +164,15 @@ header{
     float: right;
     line-height: 44px;
 }
-
+.icon_se{
+    width: 20px;
+    height: 44px;
+    /*background: #5da5fe;*/
+    margin-right: 30px;
+    font-size: 20px;
+    float: right;
+    line-height: 44px;
+}
 .icon-fangdajing1,.icon-renwu,.icon-daohanggouwuche:hover{
     cursor: pointer;
 }
@@ -229,13 +239,13 @@ nav{
     position: absolute;
     top: 0;
     left: 0;
-    background: rgba(0,0,0,0.25);
+    background: rgba(0,0,0,0.3);
     z-index: 1;
 }
 .banner_size{
     position: absolute;
     top: 0;
-    left: 0;
+    left: 1519px;
     width: 100%;
     height: 450px;
 }
@@ -253,18 +263,20 @@ nav{
     z-index: 2;
 }
 .banner_lt{
-    width: 16px;
-    height: 16px;
-    /*background: #ff8200;*/
+    width: 20px;
+    height: 35px;
+    /*background: #000000;*/
     position: absolute;
     top: 0;
     bottom: 0;
     margin-top: auto;
     margin-bottom: auto;
-    left: 20px;
-    font-size: 16px;
-    color: #ffffff;
+
+    left: 30px;
+    font-size: 20px;
+    color: #fff;
     font-weight: bold;
+    z-index: 2;
 }
 .banner_lt:hover{
     cursor: pointer;
@@ -273,18 +285,20 @@ nav{
     cursor: pointer;
 }
 .banner_gt{
-    width: 16px;
-    height: 16px;
-    /*background: #ff8200;*/
+    width: 20px;
+    height: 35px;
+    /*background: #000000;*/
     position: absolute;
     top: 0;
     bottom: 0;
     margin-top: auto;
     margin-bottom: auto;
-    right: 20px;
-    font-size: 16px;
-    color: #ffffff;
+
+    right: 30px;
+    font-size: 20px;
+    color: #fff;
     font-weight: bold;
+    z-index: 2;
 }
 .pot{
     width: 50px;
@@ -295,23 +309,33 @@ nav{
     right: 0;
     margin-left: auto;
     margin-right: auto;
+    z-index: 2;
 }
 .pot1{
-    width: 6px;
-    height: 6px;
+    width: 8px;
+    height: 8px;
     border-radius: 50%;
     background: rgba(255,255,255,0);
     margin-right: 13px;
     float: left;
+    z-index: 1000;
+    border: 1px solid #fff;
+    z-index: 2;
 }
-.pot1:first-child:hover{
-    background: rgba(255,255,255,1);
+.pot:hover{
     cursor: pointer;
 }
-.pot1:last-child:hover{
+.potHot{
     background: rgba(255,255,255,1);
-    cursor: pointer;
 }
+/*.pot1:first-child:hover{*/
+    /*background: rgba(255,255,255,1);*/
+    /*cursor: pointer;*/
+/*}*/
+/*.pot1:last-child:hover{*/
+    /*background: rgba(255,255,255,1);*/
+    /*cursor: pointer;*/
+/*}*/
 .banner_down{
     width: 100%;
     height: auto;
@@ -453,9 +477,10 @@ nav{
     transition: all 1s;
     position: relative;
 }
-.col1 a{
+.col1 a,.col2 a{
     text-decoration: none;
 }
+
 .col1:hover,.col2:hover{
     box-shadow: 0 10px 30px 5px rgba(0,0,0,0.1);
     transform: translateY(-5px);
@@ -508,7 +533,7 @@ nav{
     height: 1px;
     background:#ecece9;
     position: absolute;
-    left: -100%;
+    left: -111%;
     display: none;
     transition: all 2s;
 }
@@ -517,7 +542,7 @@ nav{
     height: 1px;
     background:#ecece9;
     position: absolute;
-    left: -100%;
+    left: -111%;
     display: none;
     transition: all 2s;
 }
@@ -605,7 +630,7 @@ nav{
 }
 .container_intro,.container_intro li .row{
     width: 100%;
-    height:304px;
+    height:450px;
     background: url("../img/banner1.jpg") no-repeat left top;
     background-size: cover;
     position: relative;
@@ -622,12 +647,12 @@ nav{
     right: 0;
     top: 0;
     width: 100%;
-    height: 305px;
+    height: 450px;
     background-color: #f7f7f7;
 }
 .bac1_imgsize{
     position: absolute;
-    top: 0;
+    top:60px;
     right: 45%;
     width: 100px;
     height: 100px;
@@ -640,7 +665,7 @@ nav{
     color: #808080;
     font-family: "微软雅黑", Helvetica, Arial, Verdana, sans-serif;
     position: absolute;
-    bottom: -305px;
+    bottom: -375px;
     right: 20%;
     animation:bac1_p 1s 1 forwards;
 }
@@ -837,7 +862,7 @@ nav{
     cursor: pointer;
 }
 .trans_word{
-    width:62%;
+    width:58%;
     height: auto;
     padding-top: 25px;
     padding-bottom: 6px;
@@ -846,7 +871,7 @@ nav{
     float: right;
 }
 .trans_word1{
-    width:62%;
+    width:58%;
     height: auto;
     padding-bottom: 25px;
     float: right;
@@ -854,10 +879,10 @@ nav{
     color: #9d9d9d;
 }
 .trans_p{
-    width:62%;
+    width:58%;
     height: auto;
     float: right;
-    font-size: 14px;
+    font-size: 13px;
     color: #a5a5a5;
     line-height: 22px;
     font-family: "微软雅黑", Helvetica, Arial, Verdana, sans-serif;
@@ -930,6 +955,7 @@ nav{
     width: 100%;
     height: auto;
     background: #f7f7f7;
+    padding-top: 60px;
 }
 .bottom_all{
     width: 80%;
@@ -1481,8 +1507,13 @@ input[type='placeholder'] color :focus{
     color:#696969;
     text-align: center;
     font-family: "times new roman";
+    margin-bottom: 20px;
 }
-
+#container1{
+    width: 258px;
+    height: 350px;
+    background: red;
+}
 /*购物车开始*/
 .shopping_w{
     width: 100%;
@@ -1692,12 +1723,6 @@ input[type='placeholder'] color :focus{
 }
 
 /*搜索框开始*/
-.search_bac{
-   width: 100%;
-    height: 100%;
-    position: fixed;
-    background: rgba(0,0,0,0.1);
-}
 .search_all{
     width: 726px;
     height: 186px;
@@ -1708,6 +1733,8 @@ input[type='placeholder'] color :focus{
     color: rgb(0, 0, 0);
     border: 3px solid rgb(170, 170, 170);
     background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 0 3000px rgba(0,0,0,0.6);
+    display: none;
 }
 .search_text{
     width: 672px;
@@ -1782,7 +1809,7 @@ input[type='placeholder'] color :focus{
     width: 80%;
     height: 1020px;
     background: #ffffff;
-    margin: 30px auto 160px auto;
+    margin: 30px auto 140px auto;
 }
 .body_all{
     width: 100%;
@@ -1837,7 +1864,7 @@ input[type='placeholder'] color :focus{
     height: 327px;
 }
 .body_pho_ri{
-    width:500px;
+    width:400px;
     height: 327px;
     margin-left: 30px;
     float: left;
@@ -2110,7 +2137,7 @@ input[type='placeholder'] color :focus{
     /*background: pink;*/
 }
 .main_cont{
-    width: 70%;
+    width: 80%;
     height: 518px;
     /*background: palegreen;*/
     margin: 0 auto;
@@ -2233,6 +2260,9 @@ input[type='placeholder'] color :focus{
     float: left;
     text-align: center;
     line-height: 40px;
+}
+.plant_plus3:hover,.plant_plus2:hover{
+    cursor: pointer;
 }
 .cont_pri_all{
     width: 50px;
@@ -2381,7 +2411,7 @@ input[type='placeholder'] color :focus{
     overflow: hidden;
 }
 .main_order{
-    width: 65%;
+    width: 72%;
     height: 1250px;
     /*background: pink;*/
     margin: 0 auto;
