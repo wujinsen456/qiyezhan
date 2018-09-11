@@ -338,7 +338,7 @@ nav{
 /*}*/
 .banner_down{
     width: 100%;
-    height: auto;
+    height:394px;
     background: #ffffff;
 }
 .ban_down_all{
@@ -358,6 +358,7 @@ nav{
     padding: 7px;
     border: 1px solid #e1e1e1;
     margin-top: 20px;
+    display: none;
     animation:photo1_size1 1s 1 forwards;
 }
 @keyframes photo1_size1{
@@ -377,7 +378,8 @@ nav{
     border: 1px solid #e1e1e1;
     margin-top: 20px;
     margin-bottom: 50px;
-    animation:photo1_size2 1s 1 forwards;
+    display: none;
+    /*animation:photo1_size2 1s 1 forwards;*/
 }
 @keyframes photo1_size2{
     0%{
@@ -391,8 +393,9 @@ nav{
 }
 .today{
     width: 100%;
-    height: auto;
+    height: 52px;
     background: #ffffff;
+    overflow: hidden;
 }
 .today_all{
     width: 80%;
@@ -400,6 +403,7 @@ nav{
     margin: 0 auto;
     padding-top: 5px;
     border-bottom: 1px solid #e1e1e1;
+    display: none;
     overflow: hidden;
 }
 .all_left{
@@ -445,19 +449,22 @@ nav{
 }
 .today_display{
     width: 100%;
-    height: auto;
+    height: 432px;
     background: #ffffff;
 }
 .display_all{
     width: 80%;
     height: auto;
     margin: 0 auto;
+    overflow: hidden;
 }
-.container_display,.container_display li .row{
+
+.container_display li{
     width: 100%;
     height: auto;
-    animation:container_display 1s 1 forwards;
     margin-bottom: 0;
+    overflow: hidden;
+    display: none;
 }
 @keyframes container_display{
     0%{
@@ -558,7 +565,7 @@ nav{
 }
 .promotion{
     width: 100%;
-    height: auto;
+    height: 514px;
     background: #ffffff;
 }
 .promotion_all{
@@ -567,20 +574,20 @@ nav{
     margin: 0 auto;
     overflow: hidden;
     padding-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
 }
-.container_pro,.container_pro li .row{
-    width: 100%;
-    height: auto;
-    padding-top: 50px;
+.promotion_left{
+    width: 603px;
+    height: 470px;
+    float: left;
+    background: #F7F7F7;
+    border: 1px solid #DDDDDD;
+    margin-top: 40px;
+    animation:promotion_left 1s 1 forwards;
+    display: none;
 }
-.col_pro1{
-    width: 100%;
-    height: auto;
-    border:1px solid #e4e4e4;
-    background: #f7f7f7;
-    animation:col_pro1 1s 1 forwards;
-}
-@keyframes col_pro1{
+@keyframes promotion_left{
     0%{
         transform: translateX(-2000px);
         opacity: 0;
@@ -590,10 +597,17 @@ nav{
         opacity: 1;
     }
 }
-.col_pro2{
-    animation:col_pro2 1s 1 forwards;
+.promotion_right{
+    width: 603px;
+    height: 470px;
+    float: left;
+    background: #F7F7F7;
+    border: 1px solid #DDDDDD;
+    margin-top: 40px;
+    animation:promotion_right 1s 1 forwards;
+    display: none;
 }
-@keyframes col_pro2{
+@keyframes promotion_right{
     0%{
         transform: translateX(2000px);
         opacity: 0;
@@ -667,18 +681,10 @@ nav{
     position: absolute;
     bottom: -375px;
     right: 20%;
-    animation:bac1_p 1s 1 forwards;
+    display: none;
+
 }
-@keyframes bac1_p{
-    0%{
-        transform: translateX(2000px);
-        opacity: 0;
-    }
-    100% {
-        transform: translateX(0px);
-        opacity: 1;
-    }
-}
+
 .all_left1{
     width: 20%;
     height: auto;
@@ -699,8 +705,9 @@ nav{
 }
 .decorate{
     width: 100%;
-    height: auto;
+    height: 600px;
     background: #ffffff;
+    overflow: hidden;
 }
 .dec_all{
     width: 80%;
@@ -710,18 +717,7 @@ nav{
 .container_dec,.container_dec li .row{
     width: 100%;
     height: 600px;
-    animation:container_dec 1s 1 forwards;
     margin-bottom: 0;
-}
-@keyframes container_dec{
-    0%{
-        transform: translateY(2000px);
-        opacity: 0;
-    }
-    100% {
-        transform: translateY(0px);
-        opacity: 1;
-    }
 }
 .col_size{
     width: 80%;
@@ -734,6 +730,7 @@ nav{
     height: 600px;
     transition: all 0.4s;
     position: absolute;
+    /*display: none;*/
 }
 .col_dec_all1{
     position: absolute;
@@ -815,7 +812,7 @@ nav{
 }
 .translate{
     width: 100%;
-    height: auto;
+    height: 532px;
     padding-top: 80px;
     background: #ffffff;
 }
@@ -831,7 +828,8 @@ nav{
 .col_trans{
     width: 100%;
     height: auto;
-    animation:col_trans 1s 1 forwards;
+    display: none;
+    /*animation:col_trans 1s 1 forwards;*/
 }
 @keyframes col_trans{
     0%{
@@ -890,7 +888,8 @@ nav{
 .trans3_size{
     width: 100%;
     height: 100%;
-    animation:trans3_size 1s 1 forwards;
+    display: none;
+    /*animation:trans3_size 1s 1 forwards;*/
 }
 @keyframes trans3_size{
     0%{
@@ -904,7 +903,7 @@ nav{
 }
 .iconall{
     width: 100%;
-    height: auto;
+    height: 160px;
 }
 .icon_all{
     width: 80%;
@@ -914,18 +913,13 @@ nav{
 .container_icon,container_icon li .row{
     width: 100%;
     height: auto;
-    animation:container_icon 1s 1 forwards;
     background: rgba(255,255,255,0.8);
+    /*display: none;*/
+    overflow: hidden;
 }
-@keyframes container_icon{
-    0%{
-        transform: translateY(2000px);
-        opacity: 0;
-    }
-    100% {
-        transform: translateY(0px);
-        opacity: 1;
-    }
+.iconallLi{
+    width: 290px;
+    height: 80px;
 }
 .icon_size{
     width: 70px;
