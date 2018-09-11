@@ -393,7 +393,7 @@ nav{
 }
 .today{
     width: 100%;
-    height: 52px;
+    height: 78.4px;
     background: #ffffff;
     overflow: hidden;
 }
@@ -578,7 +578,7 @@ nav{
     justify-content: space-between;
 }
 .promotion_left{
-    width: 603px;
+    width: 590px;
     height: 470px;
     float: left;
     background: #F7F7F7;
@@ -598,9 +598,9 @@ nav{
     }
 }
 .promotion_right{
-    width: 603px;
+    width: 590px;
     height: 470px;
-    float: left;
+    float: right;
     background: #F7F7F7;
     border: 1px solid #DDDDDD;
     margin-top: 40px;
@@ -619,7 +619,7 @@ nav{
 }
 .dis5_size{
     width: 100%;
-    height: auto;
+    height: 378px;
 }
 .pro_time{
     width: 100%;
@@ -635,33 +635,47 @@ nav{
     font-size: 16px;
     color: #000;
 }
+
+
+/*.introduce{*/
+    /*width: 100%;*/
+    /*height: auto;*/
+    /*background: #fff;*/
+    /*padding-top: 120px;*/
+    /*padding-bottom: 50px;*/
+/*}*/
 .introduce{
     width: 100%;
-    height: auto;
+    height:600px;
     background: #fff;
     padding-top: 120px;
     padding-bottom: 50px;
-}
-.container_intro,.container_intro li .row{
-    width: 100%;
-    height:450px;
-    background: url("../img/banner1.jpg") no-repeat left top;
-    background-size: cover;
     position: relative;
-    padding-bottom: 60px;
-    margin-bottom: 0;
 }
-.bac{
+.photoBac{
     width: 100%;
-    height: auto;
-    background-color: transparent;
+    height: 430px;
+    /*background: #fff;*/
+    background: url("../img/banner1.jpg") no-repeat left top;
+    background-size: 100% 430px;
+    position: absolute;
+    top: 120px;
+    left: 0;
+}
+.blackZha {
+    width: 100%;
+    height: 430px;
+    background: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 .bac1{
     position: absolute;
     right: 0;
     top: 0;
-    width: 100%;
-    height: 450px;
+    width: 50%;
+    height: 430px;
     background-color: #f7f7f7;
 }
 .bac1_imgsize{
@@ -679,11 +693,15 @@ nav{
     color: #808080;
     font-family: "微软雅黑", Helvetica, Arial, Verdana, sans-serif;
     position: absolute;
-    bottom: -375px;
+    bottom: 60px;
     right: 20%;
-    display: none;
+    /*display: none;*/
 
 }
+
+
+
+
 
 .all_left1{
     width: 20%;
